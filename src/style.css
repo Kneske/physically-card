@@ -1,0 +1,52 @@
+/* #card-number-finish {
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} */
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Sometype+Mono:wght@600&display=swap');
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@300;900&family=Sometype+Mono:wght@600&display=swap');
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@300;900&family=Sometype+Mono:wght@600&family=Staatliches&display=swap');
+
+
+  body{
+    font-family: 'Poppins', sans-serif;
+  }
+
+
+
+  #credit-card{
+    font-family: 'Sometype Mono', monospace;
+  }
+
+  #bank-name{
+    font-family: 'Staatliches', sans-serif;
+  }
+
+  @keyframes rotate {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+#cvv {
+    /* Diğer stillendirmeler */
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    animation: rotate 1.5s infinite linear;
+}
+
+.hidden{
+  display: none;
+  background-color: rgb(30 27 75);
+}

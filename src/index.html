@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background: rgb(154, 59, 221);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="w-full max-w-lg mx-auto p-8">
+      <div class="bg-white rounded-lg shadow-lg p-6">
+        <h2 class="text-lg font-medium mb-6 text-indigo-600">
+          Please pay your tickets.
+        </h2>
+        <form>
+          <div class="grid grid-cols-2 gap-6">
+            <div class="col-span-2 sm:col-span-1">
+              <label
+                for="card-number"
+                class="block text-sm font-medium text-gray-700 mb-2"
+                >Card Number</label
+              >
+              <input
+                type="text"
+                name="card-number"
+                id="card-number"
+                placeholder="0000 0000 0000 0000"
+                class="w-full py-3 px-4 border border-gray-400 rounded-lg focus:outline-none focus:border-indigo-600"
+              />
+            </div>
+            <div class="col-span-2 sm:col-span-1">
+              <label
+                for="expiration-date"
+                class="block text-sm font-medium text-gray-700 mb-2"
+                >Expiration Date</label
+              >
+              <input
+                type="text"
+                name="expiration-date"
+                id="expiration-date"
+                placeholder="MM / YY"
+                class="w-full py-3 px-4 border border-gray-400 rounded-lg focus:outline-none focus:border-indigo-600"
+              />
+            </div>
+            <div class="col-span-2 sm:col-span-1">
+              <label
+                for="cvv"
+                class="block-text-sm font-medium text-gray-700 mb-2"
+                >CVV</label
+              >
+              <input
+                type="text"
+                name="cvv"
+                id="cvvnum"
+                placeholder="000"
+                class="w-full py-3 px-4 border border-gray-400 rounded-lg focus:outline-none focus:border-indigo-600"
+              />
+            </div>
+            <div class="col-span-2 sm:col-span-1">
+              <label
+                for="card-holder"
+                class="block text-sm font-medium text-gray-700 mb-2"
+                >Card Holder</label
+              >
+              <input
+                type="text"
+                name="card-holder"
+                id="card-holder"
+                placeholder="Full Name"
+                class="w-full py-3 px-4 border border-gray-400 rounded-lg focus:outline-none focus:border-indigo-600"
+              />
+            </div>
+          </div>
+          <div class="mt-8">
+            <button
+              type="submit"
+              class="w-full bg-indigo-600 hover:bg-indigo-800 text-white font-medium py-3 rounded-lg focus:outline-none"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="w-full max-w-2xl mx-auto" id="credit-card">
+      <div class="bg-indigo-950 flex rounded-lg shadow-lg p-12 w-[%100] md:w-[710px]" id="phys">
+        <div class="flex flex-1 bg-indigo-950 flex-col gap-12">
+          <h1 class="text-white text-5xl" id="bank-name">İş Bankası</h1>
+          <p class="text-white font-medium text-xl" id="card-number-finish">
+            0000 0000 0000 0000
+          </p>
+          <p class="text-white font-medium text-3xl" id="card-user">
+            Card Holders Name/Surname
+          </p>
+        </div>
+        <div class="flex flex-1 bg-indigo-950 flex-col gap-4 justify-end">
+          <img src="" alt="" id="card-logo" class="  ml-auto" style="width:190px;">
+          <p class="text-white font-medium text-xl flex justify-end items-end h-full" id="last">
+            <span class="text-gray-400 ">valid thru </span>00/00
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
